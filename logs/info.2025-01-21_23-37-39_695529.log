@@ -1,0 +1,5 @@
+2025-01-21 23:37:39.701 | INFO     | src.core.ability:lifespan:14 - Current configuration: openapi_url='/path/openapi.json' docs_url='/path/ocs' redoc_url='/path/redoc' datasource_url='postgresql://postgres:88888888@localhost:5432/postgres' db_pool_size=5 db_pool_max_overflow=5 is_print_sql=False
+2025-01-21 23:37:39.703 | INFO     | src.core.database:init_db:23 - [Database] Initializing...
+2025-01-21 23:37:39.856 | INFO     | src.core.database:init_db:25 - [Database] Initialization complete
+2025-01-21 23:37:39.857 | INFO     | src.core.ability:lifespan:17 - [Service] Started
+2025-01-21 23:37:48.294 | INFO     | src.core.ability:lifespan:19 - [Service] Stopped

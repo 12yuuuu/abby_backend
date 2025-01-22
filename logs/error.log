@@ -1,0 +1,33 @@
+2025-01-22 15:55:12.770 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/product (psycopg2.errors.NotNullViolation) null value in column "cost" of relation "product" violates not-null constraint
+DETAIL:  Failing row contains (1, 1737532512743, 1737532512743, f, EPhone 1, Smartphone, 10000, null).
+
+[SQL: INSERT INTO product (create_timestamp, update_timestamp, is_deleted, name, category, price) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(name)s, %(category)s, %(price)s) RETURNING product.id]
+[parameters: {'create_timestamp': 1737532512743, 'update_timestamp': 1737532512743, 'is_deleted': False, 'name': 'EPhone 1', 'category': 'Smartphone', 'price': 10000.0}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-22 16:11:48.349 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/product?page_index=1&page_size=10 
+2025-01-22 16:14:39.034 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/product?page_index=1&page_size=10 
+2025-01-22 16:18:57.228 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [GET] http://127.0.0.1:8000/product?page_index=1&page_size=10 Multiple rows were found when exactly one was required
+2025-01-22 16:19:03.238 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [GET] http://127.0.0.1:8000/product?page_index=1&page_size=10 Multiple rows were found when exactly one was required
+2025-01-22 16:19:27.456 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [GET] http://127.0.0.1:8000/product?page_index=1&page_size=10 Multiple rows were found when exactly one was required
+2025-01-22 17:01:16.738 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.ForeignKeyViolation) insert or update on table "transaction" violates foreign key constraint "transaction_customer_id_fkey"
+DETAIL:  Key (customer_id)=(1) is not present in table "customer".
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, product_id, customer_id, date, quantity) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(product_id)s, %(customer_id)s, %(date)s, %(quantity)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737536476707, 'update_timestamp': 1737536476707, 'is_deleted': False, 'product_id': 1, 'customer_id': 1, 'date': 1674408536000, 'quantity': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-22 17:10:29.393 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.ForeignKeyViolation) insert or update on table "transaction" violates foreign key constraint "transaction_customer_id_fkey"
+DETAIL:  Key (customer_id)=(1) is not present in table "customer".
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, product_id, customer_id, date, quantity) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(product_id)s, %(customer_id)s, %(date)s, %(quantity)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737537029382, 'update_timestamp': 1737537029382, 'is_deleted': False, 'product_id': 1, 'customer_id': 1, 'date': 1674408536000, 'quantity': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-22 17:45:37.752 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [PUT] http://127.0.0.1:8000/chat_message/1 
+2025-01-22 17:50:11.745 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/chat_message 
+2025-01-22 17:52:18.894 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [DELETE] http://127.0.0.1:8000/chat_message/1 
+2025-01-22 17:55:53.429 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/chat_message?page_index=1&page_size=10 
+2025-01-22 17:56:28.411 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/chat_message?page_index=1&page_size=10 
+2025-01-22 17:56:55.069 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/chat_message?page_index=1&page_size=10 
+2025-01-22 17:57:17.894 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/chat_message?page_index=1&page_size=10 
+2025-01-22 17:57:24.285 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/chat_message?page_index=1&page_size=10 
+2025-01-22 17:59:29.128 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/chat_message?page_index=1&page_size=10 
+2025-01-22 18:02:00.105 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/chat_message?page_index=1&page_size=10 

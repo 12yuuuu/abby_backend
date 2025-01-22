@@ -19,12 +19,14 @@ from src.core.exception import (
     sql_exception_handler,
     sys_exception_handler,
 )
-from src.router.user_router import router as user_router
-
+from src.router.transaction_router import router as transaction_router
+from src.router.customer_router import router as customer_router
+from src.router.product_router import router as product_router
+from src.router.chat_message_router import router as chat_message_router
 
 settings = get_setting()
 
-
+# Initialize FastAPI app
 app = FastAPI(
     lifespan=lifespan,
     title="Project Title",
@@ -35,6 +37,7 @@ app = FastAPI(
     responses={"400": {"model": ErrorResp}, "500": {"model": ErrorResp}},
 )
 
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -42,7 +45,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # Global Exception Handling
 app.add_exception_handler(BizException, biz_exception_handler)
@@ -54,8 +56,10 @@ app.add_exception_handler(ResponseValidationError, response_validation_handler)
 app.add_exception_handler(SQLAlchemyError, sql_exception_handler)
 
 # Route Rules
-app.include_router(user_router)
-
+app.include_router(transaction_router)
+app.include_router(product_router)
+app.include_router(customer_router)
+app.include_router(chat_message_router)
 
 @app.get("/basic-path/", summary="Check", response_model=dict[str, object])
 async def root():

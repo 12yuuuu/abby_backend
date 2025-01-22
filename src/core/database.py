@@ -18,7 +18,6 @@ engine = create_engine(
 def init_db():
     # Database models
     # import src.model
-    from src.model.user import User
 
     logger.info("[Database] Initializing...")
     SQLModel.metadata.create_all(engine)

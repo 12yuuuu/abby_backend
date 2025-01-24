@@ -1,4 +1,6 @@
 from sqlmodel import Session, select, func, and_
+from datetime import datetime
+from datetime import datetime
 from src.core.database import get_engine
 from src.core.schema import PageReq, TablePageResp
 from src.model.models import Transaction
@@ -37,7 +39,7 @@ class TransactionCrud:
             return result
 
     def select_page(
-        self, req: PageReq, *, product_id: int | None = None, customer_id: int | None = None, date_range: tuple[int, int] | None = None
+        self, req: PageReq, *, product_id: int | None = None, customer_id: int | None = None, date_range: tuple[datetime, datetime] | None = None
     ) -> TablePageResp:
         with Session(self._engine) as session:
             conditions = []

@@ -1,4 +1,5 @@
 from fastapi import Depends
+from datetime import datetime
 from src.core.schema import TablePageResp
 from src.crud.transaction_crud import TransactionCrud
 from src.model.models import Transaction
@@ -17,7 +18,7 @@ class TransactionService:
         transaction = Transaction(
             product_id=req.product_id,
             customer_id=req.customer_id,
-            date=req.date,
+            date=req.date,  # Ensure req.date is already a datetime object
             quantity=req.quantity,
         )
         return self._transaction_crud.insert_entity(transaction)
@@ -26,17 +27,17 @@ class TransactionService:
         transaction = self._transaction_crud.select_by_id(id)
         transaction.product_id = req.product_id
         transaction.customer_id = req.customer_id
-        transaction.date = req.date
+        transaction.date = req.date  # Ensure req.date is a datetime object
         transaction.quantity = req.quantity
         return self._transaction_crud.update_entity(transaction)
-
-    def delete_transaction(self, id: int) -> None:
-        self._transaction_crud.delete_by_id(id)
 
     def get_transaction_page(self, req: TransactionPageReq) -> TablePageResp:
         return self._transaction_crud.select_page(
             req,
             product_id=req.product_id,
             customer_id=req.customer_id,
-            date_range=req.date_range,
+            date_range=req.date_range,  # Pass datetime range directly
         )
+    
+    def delete_transaction(self, id: int) -> None:
+        self._transaction_crud.delete_by_id(id)

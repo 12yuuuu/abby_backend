@@ -1,5 +1,6 @@
 from sqlmodel import SQLModel, Field, String, Integer, Float, BigInteger, Boolean, Relationship
 from typing import Optional, List
+from datetime import datetime
 from src.core.database import BaseTable
 
 class Product(BaseTable, table=True):
@@ -19,7 +20,7 @@ class Transaction(BaseTable, table=True):
 
     product_id: int = Field(foreign_key="product.id", sa_column_kwargs={"comment": "Product ID"})
     customer_id: int = Field(foreign_key="customer.id", sa_column_kwargs={"comment": "Customer ID"})
-    date: int = Field(sa_type=BigInteger, sa_column_kwargs={"comment": "Transaction date (timestamp)"})
+    date: datetime = Field(sa_column_kwargs={"comment": "Transaction date (datetime)"})
     quantity: int = Field(sa_column_kwargs={"comment": "Quantity sold"})
 
     product: Optional["Product"] = Relationship(back_populates="transactions")

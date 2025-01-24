@@ -14,6 +14,14 @@ class Setting(BaseSettings):
     db_pool_max_overflow: int = 5  # Maximum overflow for the database connection pool
     is_print_sql: bool = False  # Whether to print SQL logs
 
+    langsmith_tracing: str = "true"
+    langsmith_endpoint: str = "https://api.smith.langchain.com"
+    langsmith_api_key: str | None = None
+    langsmith_project: str | None = None
+    openai_api_key: str | None = None
+
+    hf_access_token: str | None = None
+
     class Config:
         env_file = ".env"
         env_ignore_empty = True

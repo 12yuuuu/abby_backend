@@ -1,6 +1,5 @@
 from sqlmodel import Session, select, func, and_
 from datetime import datetime
-from datetime import datetime
 from src.core.database import get_engine
 from src.core.schema import PageReq, TablePageResp
 from src.model.models import Transaction
@@ -39,18 +38,18 @@ class TransactionCrud:
             return result
 
     def select_page(
-        self, req: PageReq, *, product_id: int | None = None, customer_id: int | None = None, date_range: tuple[datetime, datetime] | None = None
+        self, req: PageReq, *, client_id: int | None = None, sku_id: int | None = None, date_range: tuple[datetime, datetime] | None = None
     ) -> TablePageResp:
         with Session(self._engine) as session:
             conditions = []
-            if product_id is not None:
-                conditions.append(Transaction.product_id == product_id)
+            if client_id is not None:
+                conditions.append(Transaction.client_id == client_id)
 
-            if customer_id is not None:
-                conditions.append(Transaction.customer_id == customer_id)
+            if sku_id is not None:
+                conditions.append(Transaction.sku_id == sku_id)
 
             if date_range is not None:
-                conditions.append(Transaction.date.between(*date_range))
+                conditions.append(Transaction.transaction_date.between(*date_range))
 
             where = and_(Transaction.is_deleted == False, *conditions)
             count_statement = select(func.count()).select_from(Transaction).where(where)
@@ -66,3 +65,4 @@ class TransactionCrud:
                 total_count=session.exec(count_statement).one(),
                 data=session.exec(list_statement).all(),
             )
+

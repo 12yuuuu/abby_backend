@@ -20,7 +20,9 @@ class Setting(BaseSettings):
     langsmith_project: str | None = None
     openai_api_key: str | None = None
 
-    hf_access_token: str | None = None
+    deepseek_url: str | None = None
+    deepseek_api_key: str | None = None
+    deepseek_model: str | None = None
 
     class Config:
         env_file = ".env"

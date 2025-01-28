@@ -19,10 +19,13 @@ from src.core.exception import (
     sql_exception_handler,
     sys_exception_handler,
 )
+from src.router.client_router import router as client_router
+from src.router.conversation_router import router as conversation_router
+from src.router.message_router import router as message_router
+from src.router.sku_router import router as sku_router
+from src.router.spu_router import router as spu_router
 from src.router.transaction_router import router as transaction_router
-from src.router.customer_router import router as customer_router
-from src.router.product_router import router as product_router
-from src.router.chat_message_router import router as chat_message_router
+from src.router.agent_router import router as agent_router
 
 settings = get_setting()
 
@@ -56,10 +59,13 @@ app.add_exception_handler(ResponseValidationError, response_validation_handler)
 app.add_exception_handler(SQLAlchemyError, sql_exception_handler)
 
 # Route Rules
+app.include_router(client_router)
+app.include_router(conversation_router)
+app.include_router(message_router)
+app.include_router(sku_router)
+app.include_router(spu_router)
 app.include_router(transaction_router)
-app.include_router(product_router)
-app.include_router(customer_router)
-app.include_router(chat_message_router)
+app.include_router(agent_router)
 
 @app.get("/basic-path/", summary="Check", response_model=dict[str, object])
 async def root():

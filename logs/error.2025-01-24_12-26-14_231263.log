@@ -1,0 +1,221 @@
+2025-01-24 12:26:14.216 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (1, 1737692774190, 1737692774190, f, null, , , Abby, 19, Female, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737692774190, 'update_timestamp': 1737692774190, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby', 'age': 19, 'gender': 'Female', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 12:27:52.927 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (2, 1737692872923, 1737692872923, f, null, , , Abby, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737692872923, 'update_timestamp': 1737692872923, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 12:32:02.460 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (3, 1737693122439, 1737693122439, f, null, , , Abby, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737693122439, 'update_timestamp': 1737693122439, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:21:59.446 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (4, 1737696119405, 1737696119405, f, null, , , Abby, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696119405, 'update_timestamp': 1737696119405, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:25:31.735 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (5, 1737696331732, 1737696331732, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696331732, 'update_timestamp': 1737696331732, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:25:34.300 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (6, 1737696334298, 1737696334298, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696334298, 'update_timestamp': 1737696334298, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:26:53.393 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (7, 1737696413378, 1737696413378, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696413378, 'update_timestamp': 1737696413378, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:27:52.171 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (8, 1737696472168, 1737696472168, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696472168, 'update_timestamp': 1737696472168, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:30:29.913 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (9, 1737696629901, 1737696629901, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696629901, 'update_timestamp': 1737696629901, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:30:32.250 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (10, 1737696632246, 1737696632246, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696632246, 'update_timestamp': 1737696632246, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:30:33.764 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (11, 1737696633760, 1737696633760, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696633760, 'update_timestamp': 1737696633760, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:32:06.253 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/client (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "client" violates not-null constraint
+DETAIL:  Failing row contains (12, 1737696726242, 1737696726242, f, null, , , Abby Lu, 19, F, , , , , , , , ).
+
+[SQL: INSERT INTO client (create_timestamp, update_timestamp, is_deleted, tenant_id, openid, follow_source, name, age, gender, email, tel, address, contact, qq, weibo, weixin, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(openid)s, %(follow_source)s, %(name)s, %(age)s, %(gender)s, %(email)s, %(tel)s, %(address)s, %(contact)s, %(qq)s, %(weibo)s, %(weixin)s, %(comment)s) RETURNING client.id]
+[parameters: {'create_timestamp': 1737696726242, 'update_timestamp': 1737696726242, 'is_deleted': False, 'tenant_id': None, 'openid': '', 'follow_source': '', 'name': 'Abby Lu', 'age': 19, 'gender': 'F', 'email': '', 'tel': '', 'address': '', 'contact': '', 'qq': '', 'weibo': '', 'weixin': '', 'comment': ''}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 13:44:28.927 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/client?page_index=1&page_size=10 
+2025-01-24 13:44:53.859 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/client?page_index=1&page_size=10 
+2025-01-24 13:49:08.007 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [GET] http://127.0.0.1:8000/client?page_index=1&page_size=10 
+2025-01-24 14:16:16.979 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [DELETE] http://127.0.0.1:8000/client/1 
+2025-01-24 14:55:22.653 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.UndefinedColumn) column "amount" of relation "transaction" does not exist
+LINE 1: ..._deleted, tenant_id, client_id, sku_id, quantity, amount, cu...
+                                                             ^
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737701722635, 'update_timestamp': 1737701722635, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-24 14:57:51.456 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (1, 1737701871438, 1737701871438, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737701871438, 'update_timestamp': 1737701871438, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 14:58:37.418 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (2, 1737701917414, 1737701917414, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737701917414, 'update_timestamp': 1737701917414, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 14:59:08.369 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (3, 1737701948367, 1737701948367, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737701948367, 'update_timestamp': 1737701948367, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 14:59:36.103 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (4, 1737701976099, 1737701976099, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737701976099, 'update_timestamp': 1737701976099, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 14:59:54.931 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (5, 1737701994924, 1737701994925, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737701994924, 'update_timestamp': 1737701994925, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:00:12.194 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (6, 1737702012189, 1737702012189, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702012189, 'update_timestamp': 1737702012189, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:00:22.444 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:00:32.107 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:01:23.272 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:01:39.151 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:01:46.785 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.ForeignKeyViolation) insert or update on table "transaction" violates foreign key constraint "transaction_client_id_fkey"
+DETAIL:  Key (client_id)=(1) is not present in table "client".
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702106762, 'update_timestamp': 1737702106762, 'is_deleted': False, 'tenant_id': 'a', 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:02:57.783 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:03:10.012 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:03:13.036 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:03:47.818 | ERROR    | src.core.exception:exception_handler:79 - Unknown exception, [POST] http://127.0.0.1:8000/transaction 
+2025-01-24 15:04:42.472 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (8, 1737702282456, 1737702282456, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702282456, 'update_timestamp': 1737702282456, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:04:44.424 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (9, 1737702284421, 1737702284421, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702284421, 'update_timestamp': 1737702284421, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:04:51.818 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (10, 1737702291814, 1737702291814, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702291814, 'update_timestamp': 1737702291814, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:05:17.327 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (11, 1737702317324, 1737702317324, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702317324, 'update_timestamp': 1737702317324, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:05:58.834 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (12, 1737702358818, 1737702358818, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702358818, 'update_timestamp': 1737702358818, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:06:02.044 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (13, 1737702362037, 1737702362037, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702362037, 'update_timestamp': 1737702362037, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:06:23.290 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.NotNullViolation) null value in column "tenant_id" of relation "transaction" violates not-null constraint
+DETAIL:  Failing row contains (14, 1737702383278, 1737702383278, f, null, 1, 1, 5, 200, RMB, 2025-01-24 10:00:00, null, null, 0, null, null).
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702383278, 'update_timestamp': 1737702383278, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:08:01.254 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.ForeignKeyViolation) insert or update on table "transaction" violates foreign key constraint "transaction_client_id_fkey"
+DETAIL:  Key (client_id)=(1) is not present in table "client".
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702481225, 'update_timestamp': 1737702481225, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:10:12.492 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.ForeignKeyViolation) insert or update on table "transaction" violates foreign key constraint "transaction_client_id_fkey"
+DETAIL:  Key (client_id)=(1) is not present in table "client".
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702612486, 'update_timestamp': 1737702612487, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:10:29.636 | ERROR    | src.core.exception:sql_exception_handler:64 - Database error, [POST] http://127.0.0.1:8000/transaction (psycopg2.errors.ForeignKeyViolation) insert or update on table "transaction" violates foreign key constraint "transaction_sku_id_fkey"
+DETAIL:  Key (sku_id)=(1) is not present in table "sku".
+
+[SQL: INSERT INTO transaction (create_timestamp, update_timestamp, is_deleted, tenant_id, client_id, sku_id, quantity, amount, currency, transaction_date, payment_method, shipping_status, discount, promotion_id, comment) VALUES (%(create_timestamp)s, %(update_timestamp)s, %(is_deleted)s, %(tenant_id)s, %(client_id)s, %(sku_id)s, %(quantity)s, %(amount)s, %(currency)s, %(transaction_date)s, %(payment_method)s, %(shipping_status)s, %(discount)s, %(promotion_id)s, %(comment)s) RETURNING transaction.id]
+[parameters: {'create_timestamp': 1737702629629, 'update_timestamp': 1737702629629, 'is_deleted': False, 'tenant_id': None, 'client_id': 1, 'sku_id': 1, 'quantity': 5, 'amount': 200.0, 'currency': 'RMB', 'transaction_date': datetime.datetime(2025, 1, 24, 10, 0), 'payment_method': None, 'shipping_status': None, 'discount': 0.0, 'promotion_id': None, 'comment': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-01-24 15:12:53.698 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [POST] http://127.0.0.1:8000/transaction 1 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+
+2025-01-24 15:13:17.923 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [POST] http://127.0.0.1:8000/transaction 1 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+
+2025-01-24 15:15:21.761 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [POST] http://127.0.0.1:8000/transaction 1 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+
+2025-01-24 15:16:13.941 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [POST] http://127.0.0.1:8000/transaction 1 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+
+2025-01-24 15:18:20.447 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [POST] http://127.0.0.1:8000/transaction 1 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+
+2025-01-24 15:20:17.543 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [PUT] http://127.0.0.1:8000/transaction/4 1 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+
+2025-01-24 15:20:47.203 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [PUT] http://127.0.0.1:8000/transaction/4 1 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+
+2025-01-24 15:21:24.405 | ERROR    | src.core.exception:response_validation_handler:54 - Response result error, [GET] http://127.0.0.1:8000/transaction?page_index=1&page_size=10 5 validation errors:
+  {'type': 'string_type', 'loc': ('response', 'data', 0, 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+  {'type': 'string_type', 'loc': ('response', 'data', 1, 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+  {'type': 'string_type', 'loc': ('response', 'data', 2, 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+  {'type': 'string_type', 'loc': ('response', 'data', 3, 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+  {'type': 'string_type', 'loc': ('response', 'data', 4, 'tenant_id'), 'msg': 'Input should be a valid string', 'input': None}
+

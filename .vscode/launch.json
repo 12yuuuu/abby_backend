@@ -5,6 +5,7 @@
             "type": "debugpy",
             "request": "launch",
             "module": "uvicorn",
+            "python": "${workspaceFolder}/.venv/bin/python", // 新增关键配置
             "args": [
                 "src.main:app",
                 "--host",

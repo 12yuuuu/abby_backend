@@ -11,6 +11,7 @@ from src.service.transaction_service import TransactionService
 
 router = APIRouter(prefix="/transaction", tags=["Transaction Management"])
 
+
 @router.get("", summary="Get transaction list", response_model=TransactionPageResp)
 def get_transaction_page(
     req: TransactionPageReq = Query(),
@@ -29,6 +30,7 @@ def update_transaction(
     id: int = Path(), req: TransactionUpdateReq = Body(), service: TransactionService = Depends()
 ):
     return service.update_transaction(id, req)
+
 
 @router.delete("/{id}", summary="Delete transaction", response_model=SuccessResp)
 def delete_transaction(id: int = Path(), service: TransactionService = Depends()):

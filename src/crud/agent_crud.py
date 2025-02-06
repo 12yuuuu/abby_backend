@@ -14,21 +14,6 @@ class AgentCrud:
             session.commit()
             session.refresh(entity)
             return entity
-
-    def select_page(self, req: TablePageResp) -> TablePageResp:
-        with Session(self._engine) as session:
-            count_statement = select(func.count()).select_from(Agent)
-            list_statement = (
-                select(Agent)
-                .offset(req.get_offset())
-                .limit(req.get_limit())
-            )
-            return TablePageResp(
-                page_index=req.page_index,
-                page_size=req.page_size,
-                total_count=session.exec(count_statement).one(),
-                data=session.exec(list_statement).all(),
-            )
         
     def get_by_id(self, id: int) -> Agent | None:
         with Session(self._engine) as session:

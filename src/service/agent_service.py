@@ -8,8 +8,7 @@ from src.core.database import get_engine
 from src.core.setting import get_setting
 from src.crud.agent_crud import AgentCrud
 from src.model.models import Agent
-from src.schema.agent_schema import AgentAddReq, AgentPageReq, AgentDetail
-from src.core.schema import TablePageResp
+from src.schema.agent_schema import AgentAddReq, AgentDetail
  
 from langchain_openai import ChatOpenAI
 
@@ -42,17 +41,18 @@ class AgentService:
                 ORDER BY total_amount DESC
             """,
             "占比": """
-                SELECT payment_method, 
+                SELECT 
+                    payment_method, 
                     COUNT(*) AS transaction_count,
-                    SUM(amount) AS total_amount,
-                    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM transaction), 2) AS percentage
+                    CAST(SUM(amount) AS FLOAT) AS total_amount,  -- 改為 FLOAT
+                    CAST(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM transaction) AS FLOAT) AS percentage  -- 改為 FLOAT
                 FROM transaction 
                 GROUP BY payment_method
                 ORDER BY total_amount DESC
             """,
             "趋势": """
                 SELECT 
-                    DATE_TRUNC('month', transaction_date) AS month,
+                    TO_CHAR(DATE_TRUNC('month', transaction_date), 'YYYY-MM') AS month,  -- 轉換為 YYYY-MM 格式
                     SUM(amount) AS total_monthly_amount
                 FROM transaction 
                 WHERE transaction_date BETWEEN '2024-07-01' AND '2024-12-31'
@@ -93,7 +93,7 @@ class AgentService:
                 result = session.execute(text(sql_query)).fetchall()
             
             # Convert result to DataFrame
-            df = pd.DataFrame(result, columns=["client_id", "total_amount"])
+            df = pd.DataFrame(result)
             data: List[Dict[str, Any]] = df.to_dict(orient="records")
             
             # Prepare prompt for LLM
@@ -127,10 +127,6 @@ class AgentService:
             # Log the error and re-raise or handle appropriately
             raise HTTPException(status_code=500, detail=str(e))
 
-    def get_agent_page(self, req: AgentPageReq) -> TablePageResp:
-        """Get paginated agent records"""
-        return self._agent_crud.select_page(req)
-
     def get_agent(self, id: int) -> AgentDetail:
         """Get a single agent record by ID"""
         try:
@@ -142,6 +138,7 @@ class AgentService:
                 )
                 
             return AgentDetail(
+                id=agent.id,
                 analysis=agent.analysis,
                 data=agent.data  # Will be automatically parsed by validator
             )

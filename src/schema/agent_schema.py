@@ -1,7 +1,6 @@
 from pydantic import BaseModel, Field, validator
 from typing import Optional, List, Dict, Any
-from datetime import datetime
-from src.core.schema import PageReq, PageResp
+from decimal import Decimal
 import json
 
 class AgentAddReq(BaseModel):
@@ -16,13 +15,11 @@ class AgentDetail(BaseModel):
     def parse_data(cls, v):
         if isinstance(v, str):
             try:
+                # Try to parse the string as JSON
                 return json.loads(v)
             except json.JSONDecodeError:
-                return v
+                return v  # If parsing fails, return the original string
+        # Convert Decimal to float for JSON serialization
+        if isinstance(v, list):
+            return [{k: (float(val) if isinstance(val, Decimal) else val) for k, val in item.items()} for item in v]
         return v
-
-class AgentPageReq(PageReq):
-    pass  # No additional filters needed
-
-class AgentPageResp(PageResp):
-    data: List[AgentDetail] = Field(title="List of Agent Records")
